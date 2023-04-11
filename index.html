@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Challenge: Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <section class="main-container">
+        <div class="encrypt">
+          <h2>Encriptar</h2>
+          <form id="encryptForm">
+            <label for="encryptText" class="label">Información para encriptar</label>
+            <textarea id="encryptText" class="textarea" placeholder="Ingrese lo que quiere encriptar"></textarea>
+            <input type="submit" value="Encriptar">
+            <hr>
+            <label for="encrypt" class="label">Resultado</label>
+            <textarea id="encryptResult" class="textarea" placeholder="Aquí aparecerá la información encriptada"></textarea>
+          </form>
+        </div>
+        <div class="decrypt">
+          <h2>Desencriptar</h2>
+          <form id="decryptForm">
+            <label for="decryptText" class="label">Información para desencriptar, en base64</label>
+            <textarea id="decryptText" class="textarea" placeholder="Ingrese la cadena encriptada"></textarea>
+            <input type="submit" value="Desencriptar">
+            <hr >
+            <label for="decryptResult" class="label">Resultado</label>
+            <textarea id="decryptResult" class="textarea" placeholder="Aquí aparecerá la información desencriptada"></textarea>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

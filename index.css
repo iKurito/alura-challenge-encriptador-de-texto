@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  top: 0;
+  position: sticky;
+  min-width: 100%;
+  background: #7c3aed;
+}
+
+.nav-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 12px 24px 12px;
+}
+
+.nav-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  background: #ffffff;
+}
+
+.main-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 12px 24px 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.main-container .encrypt, .decrypt {
+  background: #7c3aed;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-container .encrypt h2, .decrypt h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+.main-container .encrypt form, .decrypt form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-container .encrypt .label, .decrypt .label {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+
+.main-container .encrypt .textarea, .decrypt .textarea {
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+}
+
+input[type="submit"] {
+  background: #8b5cf6;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background: #5e2b9a;
+}
+
+hr {
+  width: 100%;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  min-width: 100%;
+  background: #7c3aed;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 12px 24px 12px;
+}
+
+.footer-body {
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 540px) {
+  footer {
+    position: relative;
+  }
+}

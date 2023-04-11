@@ -17,6 +17,7 @@ aside {
 
 .logo-container {
   padding: 40px;
+  text-align: center;
 }
 
 .challenge {
@@ -76,7 +77,7 @@ aside {
 
 .encrypt-button {
   background: #0A3871;
-  border: none;
+  border: 1px solid #0A3871;
   border-radius: 10px;
   padding: 10px;
   color: white;
@@ -93,7 +94,7 @@ aside {
 
 .decrypt-button {
   background: #D8DFE8;
-  border: none;
+  border: 1px solid #0A3871;
   border-radius: 10px;
   padding: 10px;
   color: #0A3871;
@@ -118,9 +119,10 @@ aside {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 80px);
-  border: 2px solid #0A3871;
+  background: white;
   border-radius: 10px;
   gap: 20px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   display: none;
 }
 
@@ -133,21 +135,19 @@ aside {
 }
 
 .result-text {
-  width: 350px;
+  width: 300px;
   border-radius: 10px;
   border: none;
   outline: none;
   outline-offset: 2px;
-  padding: 10px;
   font-size: 16px;
   resize: none;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   flex: 1;
 }
 
 .copy-button {
   background: #FFFFFF;
-  border: none;
+  border: 1px solid #0A3871;
   border-radius: 10px;
   padding: 10px;
   color: #0A3871;
@@ -164,7 +164,6 @@ aside {
   color: white
 }
 
-
 .not-found-container {
   padding: 40px;
   display: flex;
@@ -172,7 +171,8 @@ aside {
   align-items: center;
   justify-content: center;
   height: calc(100vh - 80px);
-  border: 2px solid #0A3871;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+  background: white;
   border-radius: 10px;
 }
 
@@ -185,8 +185,95 @@ aside {
   gap: 20px;
 }
 
+@media screen and (max-width: 960px) {
+  .result-text {
+    width: 230px;
+  }
+
+  .not-found-container > img {
+    width: 230px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .logo-container {
+    padding: 20px 40px 20px 40px;
+  }
+
+  .challenge {
+    height: auto;
+    padding: 0 40px 0 40px;
+  }
+
+  .challenge-container {
+    height: 900px;
+  }
+
+  .challenge-title {
+    font-size: 30px;
+  }
+  
+  .challenge-subtitle {
+    font-size: 20px;
+  }
+
+  .found-container {
+    background: white;
+  }
+
+  .found-container {
+    padding: 10px;
+    height: 400px;
+  }
+
+  .result-title {
+    font-size: 25px;
+  }
+
+  .result-text {
+    width: 100%;
+    height: auto;
+  }
+  
+  .not-found-container {
+    height: auto;
+    background: white;
+  }
+
+  .not-found-container > img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 540px) {
-  footer {
-    position: relative;
+
+  .logo-container {
+    padding: 20px;
+  }
+
+  .challenge {
+    height: auto;
+    padding: 0 20px 0 20px;
+  }
+
+  .challenge-title {
+    font-size: 25px;
+  }
+
+  .challenge-subtitle {
+    font-size: 18px;
+  }
+
+  .result {
+    padding: 20px;
+  }
+
+  .result-title {
+    font-size: 22px;
   }
 }

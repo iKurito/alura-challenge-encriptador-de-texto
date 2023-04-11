@@ -117,11 +117,32 @@ aside {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: calc(100vh - 80px);
   border: 2px solid #0A3871;
   border-radius: 10px;
+  gap: 20px;
+  display: none;
+}
+
+.result-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0A3871;
+  flex: 0;
+  text-align: center;
+}
+
+.result-text {
+  width: 350px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  outline-offset: 2px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  flex: 1;
 }
 
 .copy-button {
@@ -135,6 +156,7 @@ aside {
   transition: all 0.3s ease-in-out;
   width: 100%;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+  flex: 0;
 }
 
 .copy-button:hover {

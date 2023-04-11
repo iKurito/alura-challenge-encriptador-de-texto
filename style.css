@@ -1,114 +1,166 @@
-body {
+* {
   margin: 0;
   padding: 0;
-}
-
-nav {
-  top: 0;
-  position: sticky;
-  min-width: 100%;
-  background: #7c3aed;
-}
-
-.nav-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 24px 12px 24px 12px;
-}
-
-.nav-title {
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 main {
-  background: #ffffff;
+  background: #F3F5FC;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
 
-.main-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 24px 12px 24px 12px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1rem;
+aside {
+  flex: 0;
 }
 
-.main-container .encrypt, .decrypt {
-  background: #7c3aed;
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+.logo-container {
+  padding: 40px;
 }
 
-.main-container .encrypt h2, .decrypt h2 {
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-  margin: 0 0 10px 0;
+.challenge {
+  flex: 1;
+  padding: 40px;
 }
 
-.main-container .encrypt form, .decrypt form {
+.challenge-container {
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
-.main-container .encrypt .label, .decrypt .label {
+.challenge-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #0A3871;
+  margin: 0 0 20px 0;
+  flex: 0;
+  text-align: center;
+}
+
+.challenge-subtitle {
   font-size: 20px;
-  color: white;
-  margin: 0;
+  color: #0A3871;
+  margin: 0 0 20px 0;
+  flex: 0;
 }
 
-.main-container .encrypt .textarea, .decrypt .textarea {
-  height: 100px;
+.challenge-text {
+  width: 100%;
   border-radius: 10px;
   border: none;
+  outline: none;
+  outline-offset: 2px;
   padding: 10px;
   font-size: 16px;
   resize: none;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  flex: 1;
 }
 
-input[type="submit"] {
-  background: #8b5cf6;
+.info-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+  flex: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.encrypt-button {
+  background: #0A3871;
   border: none;
   border-radius: 10px;
   padding: 10px;
   color: white;
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
-}
-
-input[type="submit"]:hover {
-  background: #5e2b9a;
-}
-
-hr {
   width: 100%;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-footer {
-  bottom: 0;
-  position: absolute;
-  min-width: 100%;
-  background: #7c3aed;
+.encrypt-button:hover {
+  background: #052051;
 }
 
-.footer-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 24px 12px 24px 12px;
+.decrypt-button {
+  background: #D8DFE8;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: #0A3871;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.footer-body {
+.decrypt-button:hover {
+  background: #CED4DA;
+}
+
+.result {
+  flex: 0;
+  padding: 40px;
+}
+
+.found-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  border: 2px solid #0A3871;
+  border-radius: 10px;
+}
+
+.copy-button {
+  background: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: #0A3871;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.copy-button:hover {
+  background: #0A3871;
+  color: white
+}
+
+
+.not-found-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  border: 2px solid #0A3871;
+  border-radius: 10px;
+}
+
+.not-found-message {
+  font-size: 20px;
+  color: #0A3871;
   text-align: center;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media screen and (max-width: 540px) {

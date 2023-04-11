@@ -9,28 +9,42 @@
   </head>
   <body>
     <main>
-      <section class="main-container">
-        <div class="encrypt">
-          <h2>Encriptar</h2>
-          <form id="encryptForm">
-            <label for="encryptText" class="label">Información para encriptar</label>
-            <textarea id="encryptText" class="textarea" placeholder="Ingrese lo que quiere encriptar"></textarea>
-            <input type="submit" value="Encriptar">
-            <hr>
-            <label for="encrypt" class="label">Resultado</label>
-            <textarea id="encryptResult" class="textarea" placeholder="Aquí aparecerá la información encriptada"></textarea>
-          </form>
+      <aside>
+        <div class="logo-container">
+          <img src="./assets/alura-logo.svg" alt="alura-logo">
         </div>
-        <div class="decrypt">
-          <h2>Desencriptar</h2>
-          <form id="decryptForm">
-            <label for="decryptText" class="label">Información para desencriptar, en base64</label>
-            <textarea id="decryptText" class="textarea" placeholder="Ingrese la cadena encriptada"></textarea>
-            <input type="submit" value="Desencriptar">
-            <hr >
-            <label for="decryptResult" class="label">Resultado</label>
-            <textarea id="decryptResult" class="textarea" placeholder="Aquí aparecerá la información desencriptada"></textarea>
-          </form>
+      </aside>
+      <section class="challenge">
+        <div class="challenge-container">
+          <h1 class="challenge-title">Challenge: Encriptar y Desencriptar Texto</h1>
+          <h3 class="challenge-subtitle">Oracle ONE - Challenge #1. Ronaldo Romario Tunque Cahui</h3>
+          <textarea id="text" class="challenge-text" placeholder="Ingrese el texto aquí"></textarea>
+          <div class="bottom">
+            <div class="info-container">
+              <img src="./assets/exclamation.svg" alt="exclamation">
+              <span>Solo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="button-container">
+              <button type="button" id="encrypt" class="encrypt-button">Encriptar</button>
+              <button type="button" id="decrypt" class="decrypt-button">Desencriptar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="result">
+        <div class="found-container">
+          <img src="./assets/not-found.svg" alt="not-found">
+          <div class="not-found-message">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <button type="button" id="copy" class="copy-button">Copiar</button>
+          </div>
+        </div>
+        <div class="not-found-container" style="display: none">
+          <img src="./assets/not-found.svg" alt="not-found">
+          <div class="not-found-message">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingrese el texto que desees encriptar o desencriptar</p>
+          </div>
         </div>
       </section>
     </main>

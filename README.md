@@ -10,7 +10,7 @@
 </div>
 <br />
 <div align="center">
-  <img width="500" heigth="300" src="assets/front-view.png" alt="encryp-decrypt-text" />
+  <img width="700" heigth="300" src="assets/front-view.png" alt="encryp-decrypt-text" />
 </div>
 
 <div align="center">

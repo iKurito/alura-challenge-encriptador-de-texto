@@ -62,4 +62,4 @@ gaitober" => "gato"
 
 ### 6. Autor:
 - Ronaldo Romario Tunque Cahui <br>
-<a href="https://www.linkedin.com/in/ronaldotunquecahui" target="blank_"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-@ronaldotunquecahui-blue?style=flat&logo=linkedin"></a>
+<a href="https://www.linkedin.com/in/ronaldotunquecahui" target="_blank" rel="noopener"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-@ronaldotunquecahui-blue?style=flat&logo=linkedin"></a>

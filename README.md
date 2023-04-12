@@ -5,9 +5,10 @@
 
 # 1. Encriptador de texto
 
-<div align="center" style="margin-bottom: 10px;">
+<div align="center">
   <img src="assets/alura-logo.svg" width="64" alt="alura-logo" />
 </div>
+<br />
 <div align="center">
   <img width="500" heigth="300" src="assets/front-view.png" alt="encryp-decrypt-text" />
 </div>

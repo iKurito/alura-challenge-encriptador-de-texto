@@ -1,7 +1,7 @@
 # Oracle + Alura LATAM - Challenge 01. Encriptar y Desencriptar Texto
 
 <div align="center"><img src="assets/oracle-alura-latam-logo.svg" width="200"/></div>
-<div align="center"><img src="assets/alura-latam-logo.png" width="100"/></div>
+<div align="center"><img src="assets/one-logo.png" width="100"/></div>
 
 # 1. Encriptador de texto
 

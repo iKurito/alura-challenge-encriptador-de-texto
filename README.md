@@ -65,4 +65,4 @@ gaitober" => "gato"
 <a href="https://www.linkedin.com/in/ronaldotunquecahui" target="_blank" rel="noopener"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-@ronaldotunquecahui-blue?style=flat&logo=linkedin"></a>
 
 ### 7. Badge:
-<div align="center"><img src="assets/badge.png" width="100"/></div>
+<div align="center"><img src="assets/badge.png" width="200"/></div>
